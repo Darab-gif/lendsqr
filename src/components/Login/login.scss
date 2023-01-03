@@ -1,0 +1,110 @@
+@import "../../style/color.scss";
+
+.loginContainer {
+  background-color: primary_color;
+
+  .logo {
+    height: 36px;
+    width: 174px;
+    margin: 40px 0px 0px 60px;
+  }
+  .heroWrapper {
+    margin-top: 4rem;
+    img {
+      width: 600px;
+      height: 337.57px;
+    }
+  }
+  .formWrapper {
+    padding-left: 20px;
+    width: 704px;
+    box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+    background-color: primary_color;
+
+    h1 {
+      width: 183px;
+      height: 55px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 55px;
+      letter-spacing: -0.04em;
+      color: navy_blue;
+    }
+    p {
+      font-family: "Avenir Next";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 27px;
+      color: navy_blue;
+    }
+    .inner_box {
+      position: relative;
+      margin-top: 20px;
+    }
+    input {
+      width: 447px;
+      height: 50px;
+      border: 2px solid rgba(84, 95, 125, 0.15);
+      border-radius: 5px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      padding-left: 5px;
+      color: #545f7d;
+      opacity: 0.6;
+    }
+    span {
+      position: absolute;
+      z-index: 999999;
+      left: 390px;
+      cursor: pointer;
+      top: 20px;
+      font-family: "Avenir Next";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #39cdcc;
+    }
+    .pswd {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #39cdcc;
+      margin-left: 6px;
+    }
+    button {
+      background: #39cdcc;
+      border-radius: 8px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      display: block;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #ffffff;
+      border: none;
+      outline: none;
+      width: 450px;
+      height: 50px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  }
+
+  .loginWrapper {
+    display: flex;
+    margin-top: 3.4rem;
+  }
+}

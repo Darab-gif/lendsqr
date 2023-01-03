@@ -1,0 +1,36 @@
+.user_container {
+  width: 220px;
+  height: 140px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 20px 0px 0px 20px;
+
+  h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #545f7d;
+    margin-top: 15px;
+  }
+  p {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #213f7d;
+  }
+}
+
+.user_wrapper {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  margin-top: 15rem;
+  margin-left: 10rem;
+}

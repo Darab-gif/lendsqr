@@ -1,0 +1,72 @@
+.header_wrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+
+  figure {
+    img {
+      height: 36px;
+      width: 174px;
+    }
+  }
+
+  .search_box {
+    display: flex;
+    input {
+      background: #ffffff;
+      opacity: 0.2;
+      border: 1px solid #213f7d;
+      border-radius: 8px;
+      width: 280px;
+      height: 40px;
+      padding-left: 20px;
+    }
+    span {
+      width: 56px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      justify-content: center;
+      cursor: pointer;
+      background: #39cdcc;
+    }
+  }
+  .profile_box {
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+    gap: 25px;
+    .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      cursor: pointer;
+      text-decoration-line: underline;
+      color: #213f7d;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+}
