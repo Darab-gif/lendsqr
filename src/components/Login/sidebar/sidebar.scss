@@ -29,10 +29,11 @@
 }
 
 .siderender_box {
-  div {
+  .navlink {
     display: flex;
     justify-items: center;
     gap: 6px;
+    text-decoration: none;
     padding-left: 5px;
     margin-top: 12px;
 
@@ -42,9 +43,8 @@
       width: 283px;
       height: 40px;
       border-left: 2px solid #39cdcc;
-      background: #39cdcc;
+      background: #39cdcc22;
       color: #213f7d;
-      opacity: 0.06;
     }
   }
   p {

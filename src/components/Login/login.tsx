@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./login.scss";
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -23,7 +24,9 @@ const Login = () => {
             </div>
             <br />
             <p className="pswd">Forgot PASSWORD?</p>
-            <button>LOG IN</button>
+            <NavLink to="/Users" style={{ textDecoration: "none" }}>
+              <button>LOG IN</button>
+            </NavLink>
           </form>
         </div>
       </div>

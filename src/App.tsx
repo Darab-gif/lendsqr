@@ -1,16 +1,18 @@
 import React from "react";
-import Dashboard from "./components/Login/dashboard/dashboard";
-import Header from "./components/Login/header/Header";
-/*import {BrowserRouter} from "react-router-dom"
-import Login from "./components/Login/login";*/
-import Sidebar from "./components/Login/sidebar/Sidebar";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DashboardPage from "./pages/DashboardPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <Header />
-      <Dashboard />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/Users" element={<DashboardPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

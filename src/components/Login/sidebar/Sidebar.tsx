@@ -11,10 +11,10 @@ const Sidebar = () => {
     <div className="siderender_box" key={index}>
       <p>{val.title}</p>
       {val.link.map((item: any) => (
-        <div>
+        <NavLink to={`/${item.name}`} key={item.name} className="navlink">
           <span className="icon">{item.icon}</span>
           <span className="name">{item.name}</span>
-        </div>
+        </NavLink>
       ))}
     </div>
   ));

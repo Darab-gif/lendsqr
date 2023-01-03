@@ -5,6 +5,8 @@ import UserDetails from "../userDetails/UserDetails";
 import { BsFilter } from "react-icons/bs";
 import { FiMoreVertical } from "react-icons/fi";
 import "./dashboard.scss";
+import Sidebar from "../sidebar/Sidebar";
+import Header from "../header/Header";
 
 let PageSize = 10;
 let siblingCount = 1;
@@ -21,6 +23,8 @@ const Dashboard = () => {
   console.log(person);
   return (
     <div className="dashboard_wrapper">
+      <Sidebar/>
+      <Header/>
       <div>USERS</div>
 
       <UserDetails />
