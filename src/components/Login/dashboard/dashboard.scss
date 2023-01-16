@@ -30,11 +30,15 @@
     tbody tr:nth-child(even) {
       background-color: #fafafa;
     }
-
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
     tbody tr td {
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
+
       line-height: 14px;
       color: #545f7d;
       padding: 12px;

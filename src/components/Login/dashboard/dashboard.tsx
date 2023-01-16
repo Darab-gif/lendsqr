@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import Pagination from "../Pagination/Pagination";
 import UserDetails from "../userDetails/UserDetails";
 import { BsFilter } from "react-icons/bs";
@@ -23,8 +24,8 @@ const Dashboard = () => {
   console.log(person);
   return (
     <div className="dashboard_wrapper">
-      <Sidebar/>
-      <Header/>
+      <Sidebar />
+      <Header />
       <div>USERS</div>
 
       <UserDetails />
@@ -75,13 +76,35 @@ const Dashboard = () => {
             {currentTableData.map((item: any) => {
               return (
                 <tr>
-                  <td>{item.orgName.substring(0, 10)}</td>
-                  <td>{item.userName}</td>
+                  <td>
+                    <Link to={`/post/${item.id}`} className="link">
+                      {item.orgName.substring(0, 10)}
+                    </Link>
+                  </td>
+                  <td>
+                    <Link to={`/post/${item.id}`} className="link">
+                      {item.userName}
+                    </Link>
+                  </td>
 
-                  <td>{item.email}</td>
-                  <td>{item.phoneNumber}</td>
-                  <td>{item.createdAt.substring(0, 16)}</td>
-                  <td></td>
+                  <td>
+                    <Link to={`/post/${item.id}`} className="link">
+                      {item.email}
+                    </Link>
+                  </td>
+                  <td>
+                    <Link to={`/post/${item.id}`} className="link">
+                      {item.phoneNumber}
+                    </Link>
+                  </td>
+                  <td>
+                    <Link to={`/post/${item.id}`} className="link">
+                      {item.createdAt.substring(0, 16)}
+                    </Link>
+                  </td>
+                  <td>
+                    <Link to={`/post/${item.id}`} className="link"></Link>
+                  </td>
                   <td>
                     <FiMoreVertical />
                   </td>

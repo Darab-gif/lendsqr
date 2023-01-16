@@ -23,17 +23,19 @@
       background: #ffffff;
       opacity: 0.2;
       border: 1px solid #213f7d;
-      border-radius: 8px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
       width: 280px;
       height: 40px;
       padding-left: 20px;
     }
     span {
       width: 56px;
-      height: 40px;
+      height: 43.4px;
       display: flex;
       align-items: center;
-      border-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
       justify-content: center;
       cursor: pointer;
       background: #39cdcc;
